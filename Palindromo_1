@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int confirmador=0;
+char palin[7],*p_palin=&palin[0];
+int main() {
+	for (int x=0;x<7;x++){
+		cin>>palin[x];
+	}
+	for (int i=0;i<7;i++){
+		
+		
+		if (*(p_palin+i)==*(p_palin+(6-i))){
+			if (6-i!= 1){
+				confirmador+=1;
+			}	
+		}
+}
+	//
+	if (confirmador==6
+		){
+		cout<<palin<<": Es palindrome\n"<<endl;
+	}	
+	
+	return 0;
+}
+
